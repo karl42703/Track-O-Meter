@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Track_O_Meter"
+       x:Class="Track_O_Meter.AppShell">
+
+    <ShellContent Title="Login" ContentTemplate="{DataTemplate local:LoginPage}" />
+    <ShellContent Title="Register" ContentTemplate="{DataTemplate local:RegistrationPage}" />
+    <ShellContent Title="otp" ContentTemplate="{DataTemplate local:CodePage}" />
+
+
+</Shell>

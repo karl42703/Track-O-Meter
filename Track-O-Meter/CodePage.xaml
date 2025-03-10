@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Track_O_Meter.CodePage"
+             BackgroundColor="#DCDCDC">
+
+    <Grid RowDefinitions="Auto,*,Auto">
+        <!-- Gray Background -->
+        <BoxView Color="#DCDCDC" Grid.Row="0" HeightRequest="400"/>
+
+        <!-- OTP Text and Input Boxes -->
+        <VerticalStackLayout Grid.Row="0"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="15">
+            <Label Text="OTP"
+                   FontSize="30"
+                   TextColor="Black"
+                   FontFamily="Century Gothic"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+           
+            <Label Text="VERIFY YOUR ACCOUNT"
+                   FontSize="25"
+                   TextColor="Black"
+                    FontFamily="Century Gothic"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="We’ll send a One Time Password to your mobile number."
+                   FontSize="20"
+                   TextColor="#252525"
+                   FontFamily="Roboto"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+        </VerticalStackLayout>
+
+        <!-- Red Section (With OTP Boxes and Button) -->
+        <Frame Grid.Row="1"
+               BackgroundColor="Red"
+               CornerRadius="100"
+               HeightRequest="300"
+               WidthRequest="1000"
+               VerticalOptions="End"
+               HorizontalOptions="Fill"
+               Padding="20">
+
+            <VerticalStackLayout VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 Spacing="20">
+
+                <!-- OTP Input Boxes -->
+                <HorizontalStackLayout Spacing="10"
+                                       HorizontalOptions="Center">
+                    <Frame BackgroundColor="White"
+                           WidthRequest="45"
+                           HeightRequest="50"
+                           CornerRadius="10"
+                           BorderColor="Black"
+                           Padding="0">
+                        <Entry MaxLength="1"
+                               FontSize="20"
+                               Keyboard="Numeric"
+                               HorizontalTextAlignment="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+
+                    <Frame BackgroundColor="White"
+                           WidthRequest="45"
+                           HeightRequest="50"
+                           CornerRadius="10"
+                           BorderColor="Black"
+                           Padding="0">
+                        <Entry MaxLength="1"
+                               FontSize="20"
+                               Keyboard="Numeric"
+                               HorizontalTextAlignment="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+
+                    <Frame BackgroundColor="White"
+                           WidthRequest="45"
+                           HeightRequest="50"
+                           CornerRadius="10"
+                           BorderColor="Black"
+                           Padding="0">
+                        <Entry MaxLength="1"
+                               FontSize="20"
+                               Keyboard="Numeric"
+                               HorizontalTextAlignment="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+
+                    <Frame BackgroundColor="White"
+                           WidthRequest="45"
+                           HeightRequest="50"
+                           CornerRadius="10"
+                           BorderColor="Black"
+                           Padding="0">
+                        <Entry MaxLength="1"
+                               FontSize="20"
+                               Keyboard="Numeric"
+                               HorizontalTextAlignment="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+
+                    <Frame BackgroundColor="White"
+                           WidthRequest="45"
+                           HeightRequest="50"
+                           CornerRadius="10"
+                           BorderColor="Black"
+                           Padding="0">
+                        <Entry MaxLength="1"
+                               FontSize="20"
+                               Keyboard="Numeric"
+                               HorizontalTextAlignment="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+
+                    <Frame BackgroundColor="White"
+                           WidthRequest="45"
+                           HeightRequest="50"
+                           CornerRadius="10"
+                           BorderColor="Black"
+                           Padding="0">
+                        <Entry MaxLength="1"
+                               FontSize="20"
+                               Keyboard="Numeric"
+                               HorizontalTextAlignment="Center"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                </HorizontalStackLayout>
+
+                <!-- Verify Button -->
+                <Button Text="Verify Account"
+                        BackgroundColor="White"
+                        TextColor="Red"
+                        FontAttributes="Bold"
+                        FontFamily="Roboto"
+                        FontSize="18"
+                        CornerRadius="25"
+                        HeightRequest="50"
+                        WidthRequest="200"
+                        HorizontalOptions="Center"
+                        />
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- White Bottom Strip -->
+        <BoxView Grid.Row="2" Color="MistyRose" HeightRequest="50"/>
+    </Grid>
+</ContentPage>

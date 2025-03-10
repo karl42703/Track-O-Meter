@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Track_O_Meter.LoginPage"
+             BackgroundColor="#DCDCDC"
+             Padding="0"
+             NavigationPage.HasNavigationBar="False">
+             
+
+    <VerticalStackLayout Padding="50" Spacing="15">
+
+        <BoxView HeightRequest="100"
+                 Color="#DCDCDC"/>
+        <!-- Logo or App Title -->
+        <Image Source="tom1.png" />
+
+
+        <!-- Full Name Input -->
+        
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="5">
+            <Entry x:Name="FullNameEntry" FontFamily="Roboto"
+                   Placeholder="Full Name *"
+                   FontSize="16"
+                   BackgroundColor="Transparent"   
+                   />
+        </Frame>
+
+        <!-- Mobile Number Input -->
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="5">
+            <Entry x:Name="MobileNumberEntry"
+                   Placeholder="Mobile Number *" FontFamily="Roboto"
+                   FontSize="16"
+                   Keyboard="Telephone"/>
+        </Frame>
+
+        <!-- Password Input -->
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="5">
+            <Entry x:Name="PasswordEntry" FontFamily="Roboto"
+                   Placeholder="Password *"
+                   FontSize="16"
+                   IsPassword="True"/>
+        </Frame>
+        
+
+        <!-- Button Row -->
+        <HorizontalStackLayout Spacing="10">
+            <!-- Create Account Button -->
+            <Button Text="Create Account"
+                    BackgroundColor="White"
+                    TextColor="Red"
+                    HeightRequest="50"
+                    WidthRequest="150"
+                    Clicked="OnCreateAccountClicked"
+                    Margin="0,40,0,0"
+                    CornerRadius="20"
+                    BorderWidth="2"
+                    FontFamily="Roboto"
+                    FontAttributes="Bold"
+                    />
+
+            <!-- Login Button -->
+            <Button Text="Log In"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    HeightRequest="50"
+                    WidthRequest="150"
+                    Clicked="OnLoginClicked"
+                    Margin="0,40,0,0"
+                    CornerRadius="20"
+                    BorderWidth="2"
+                    FontFamily="Roboto"
+                    FontAttributes="Bold"/>
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

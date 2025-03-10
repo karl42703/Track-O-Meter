@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Track_O_Meter.RegistrationPage"
+             BackgroundColor="#DCDCDC">
+
+    <Grid RowDefinitions="Auto, *">
+
+        <!-- Top Section (Title + Image) -->
+        <Grid ColumnDefinitions="*, Auto" VerticalOptions="Start" Margin="20,5,20,0" HeightRequest="80">
+
+            <!-- Title (Left Side) -->
+            <Label Text="Get Started" FontSize="24" FontAttributes="Bold" 
+           HorizontalOptions="Start" FontFamily="Roboto" 
+           VerticalOptions="Center" TextColor="Red"/>
+
+            <!-- Large Image (Right Side) -->
+            <Image Source="tom1.png" HeightRequest="200" WidthRequest="200"
+           Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center"/>
+        </Grid>
+
+
+
+
+
+
+        <!-- Bottom Section (Red Box) -->
+        <Frame BackgroundColor="Red" CornerRadius="40" Padding="20" 
+               Grid.Row="1" HasShadow="False" VerticalOptions="FillAndExpand">
+
+            <VerticalStackLayout Spacing="15">
+
+                <!-- Profile Details Label -->
+                <Label Text="Profile Details" FontSize="18" FontAttributes="Bold" TextColor="White"/>
+
+                <!-- Input Fields -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="5">
+                    <Entry x:Name="FirstName" Placeholder="First Name" BackgroundColor="Transparent"/>
+                </Frame>
+
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="5">
+                    <Entry x:Name="Surname" Placeholder="Surname" BackgroundColor="Transparent"/>
+                </Frame>
+
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="5">
+                    <Entry x:Name="Suffix" Placeholder="Suffix" BackgroundColor="Transparent"/>
+                </Frame>
+
+                <!-- Sex & Mobile Number Side by Side -->
+                <Grid ColumnDefinitions="1.5*, 3*">
+
+                    <!-- Sex Dropdown -->
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="5" Margin="0,0,10,0">
+                        <Grid>
+                            <Picker x:Name="SexPicker" BackgroundColor="Transparent" Title="Select Sex"
+                                    HorizontalOptions="FillAndExpand"/>
+                            <Label Text="▼" TextColor="Red" FontSize="16"
+                                   VerticalOptions="Center" HorizontalOptions="End" Margin="0,0,10,0"/>
+                        </Grid>
+                    </Frame>
+
+                    <!-- Mobile Number -->
+                    <Frame BackgroundColor="White" CornerRadius="10" Padding="5" Grid.Column="1">
+                        <Entry x:Name="MobileNumber" Placeholder="Mobile Number" Keyboard="Telephone" BackgroundColor="Transparent"/>
+                    </Frame>
+                </Grid>
+
+                <!-- Account Type Dropdown -->
+                <Frame BackgroundColor="White" CornerRadius="10" Padding="5" Margin="0,0,10,0">
+                    <Grid>
+                        <Picker x:Name="AccountTypePicker" BackgroundColor="Transparent" Title="Select Account Type"
+                                HorizontalOptions="FillAndExpand"/>
+                        <Label Text="▼" TextColor="Red" FontSize="16"
+                               VerticalOptions="Center" HorizontalOptions="End" Margin="0,0,10,0"/>
+                    </Grid>
+                </Frame>
+
+                <!-- Next Button -->
+                <Button Text="Next" BackgroundColor="White" TextColor="Red" Clicked="OnNextClicked" CornerRadius="10"/>
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+    </Grid>
+
+</ContentPage>
