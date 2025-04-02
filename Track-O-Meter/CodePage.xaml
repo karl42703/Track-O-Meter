@@ -8,11 +8,17 @@
         <!-- Gray Background -->
         <BoxView Color="#DCDCDC" Grid.Row="0" HeightRequest="400"/>
 
+      
+
         <!-- OTP Text and Input Boxes -->
+        
         <VerticalStackLayout Grid.Row="0"
                              VerticalOptions="Center"
                              HorizontalOptions="Center"
-                             Spacing="15">
+                             Spacing="15"
+                             Margin="0,0,0,0">
+            <!-- Image on Top -->
+            <Image Source="otpicon.png" Grid.Row="0"  HeightRequest="150" WidthRequest="200" VerticalOptions="Start" HorizontalOptions="Center"/>
             <Label Text="OTP"
                    FontSize="30"
                    TextColor="Black"
@@ -20,7 +26,7 @@
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-           
+
             <Label Text="VERIFY YOUR ACCOUNT"
                    FontSize="25"
                    TextColor="Black"
@@ -142,6 +148,7 @@
                         HeightRequest="50"
                         WidthRequest="200"
                         HorizontalOptions="Center"
+                        Clicked="OnNextClicked"
                         />
             </VerticalStackLayout>
         </Frame>

@@ -4,6 +4,12 @@ public partial class CodePage : ContentPage
 {
 	public CodePage()
 	{
-		InitializeComponent();
+		 InitializeComponent();
+
 	}
+    private async void OnNextClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new MenuPage());
+
+    }
 }

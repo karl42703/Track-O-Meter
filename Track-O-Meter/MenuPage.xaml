@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Track_O_Meter.MenuPage"
+             >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar Menu -->
+        <StackLayout BackgroundColor="#8B0000" Padding="10" Grid.Column="0">
+            <HorizontalStackLayout>
+                <Label Text="Menu" BackgroundColor="Transparent" TextColor="White" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Image Source="view.png" WidthRequest="20" HeightRequest="20" />
+                <Button Text="View past trips" BackgroundColor="Transparent" TextColor="White" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Image Source="settings.png" WidthRequest="20" HeightRequest="20" />
+                <Button Text="Settings" BackgroundColor="Transparent" TextColor="White" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout VerticalOptions="EndAndExpand">
+                <Image Source="exit.png" WidthRequest="20" HeightRequest="20" />
+                <Button Text="Exit" BackgroundColor="Transparent" TextColor="White" />
+            </HorizontalStackLayout>
+        </StackLayout>
+        <!-- Main Content -->
+        <StackLayout Grid.Column="1">
+            <!-- Map Section -->
+            <Border BackgroundColor="White" HeightRequest="200">
+                <Label Text="[Map Placeholder]" HorizontalOptions="Center" VerticalOptions="Center" />
+            </Border>
+
+            <!-- Info Card -->
+
+            <!-- Bottom Button -->
+            <Button Text="Book a Ride" BackgroundColor="#8B0000" TextColor="White" CornerRadius="10" Margin="10" />
+
+            <!-- Textboxes -->
+            <StackLayout Padding="10" Spacing="10">
+                <Entry x:Name="CurrLocation" Placeholder="Current Location" />
+                <Entry x:Name="Terminal" Placeholder="Terminal" />
+                <Entry x:Name="Dest" Placeholder="Destination" />
+                <Entry x:Name="EstFare" Placeholder="Estimated Fare" />
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

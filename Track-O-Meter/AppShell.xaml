@@ -7,6 +7,7 @@
     <ShellContent Title="Login" ContentTemplate="{DataTemplate local:LoginPage}" />
     <ShellContent Title="Register" ContentTemplate="{DataTemplate local:RegistrationPage}" />
     <ShellContent Title="otp" ContentTemplate="{DataTemplate local:CodePage}" />
+    <ShellContent Title="otp" ContentTemplate="{DataTemplate local:MenuPage}" />
 
 
 </Shell>
