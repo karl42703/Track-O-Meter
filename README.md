@@ -1,1 +1,2 @@
-pwede ata collab things dito
+Para sa bwakanang inang research
+Di naman idedeploy
